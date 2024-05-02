@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Color of Rainbow</legend>
+
+            <!-- label wrap version-->
+            <!-- best standard-->
+            <label FOR="color_red">
+                <input type="checkbox" name="color" value="color_red">
+                Red
+            </label>
+
+            <br>
+
+
+            <!-- unwrap version-->
+            <input type="checkbox" name="color" value="color_green" id="color_green"> 
+            <label for="color_green">Green</label>
+
+            <!-- button tag-->
+            <button type="button" onclick="">Click Button</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Food</legend>
+            <!-- this is the radio tags for single choice-->
+            <label for="food_apple">
+                <input type="radio" name="food" value="carrot" id="food_carrot">
+                Apple
+            </label>
+            <br>
+            <label for="food_carrot">
+                <input type="radio" name="food" value="carrot" id="food_carrot">
+                Carrot
+            </label>
+            <br>
+            <!-- my experiment to see if can combine multi and single choice-->
+            <label for="food_cheese">
+                <input type="checkbox" name="food" value="cheese" id="food_cheese">
+                Cheese
+            </label>
+
+            <!-- input button-->
+            <input type="button" value="Input Button">
+
+             <!-- must be relevant to content in fieldset-->
+             <br>
+             <h3>Food Critiques:</h3>
+             <textarea name="food-complaints"></textarea>
+        </fieldset>
+
+        
+        <div id="textarea">
+            <h3>Add comments Here:</h3>
+        
+            <!-- this is how to make multi-lined comments-->
+            <textarea name="note" placeholder="Feel Free to add comments Here!" maxlength="10"></textarea>
+
+            <br>
+            <!--single line input-->
+            <input type="text" placeholder="I am an single line">
+
+            <!--input submit button-->
+            <input type="submit">
+        </div>
+    </form>
+
+    <form>
+        <!--all information related to numbers-->
+        <div id="numbers">
+            <input type="number" min="0 max=10">
+        </div>    
+    </form>
+        
+    <!-- this is where all the dropdown code will go-->
+    <div id="dropdown">
+        <!--normal dropdown-->
+        <select name="Cars">
+            <option name="Cars"value="pick">Pick an Option</option>
+            <option name="Cars"value="volkswagon">volkswagon</option>
+            <option name="Cars"value="bmw">BMW</option>
+            <option name="Cars"value="chevy">Chevy</option>
+        </select>
+    </div>
+
+    <!-- this is how to make grouped dropdown menu-->
+    <h4>Group Dropdown</h4>
+    <select name="fruits">
+        <optgroup label="Common Fruit">
+            <option name="fruits"value="apple">Apple</option>
+            <option name="fruits"value="banana">Banana</option>
+            <option name="fruits"value="orange">Orange</option>
+        </optgroup>
+        <optgroup label="Exotic Fruit">
+            <option name="fruits" value="mango">Mango</option>
+            <option name="fruits" value="mango">Pineapple</option>
+            <option name="fruits" value="mango">dragon_fruit</option>
+        </optgroup>
+    </select>
+    </div>
+    <form></form>
+            <!--tester another submit-->
+        <div id="testarea">
+            <h3>Test Form</h3>
+            <textarea name="note"></textarea>
+        </div>
+    </form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson3</title>
+</head>
+<body>
+ 
+<!--code i edited-->
+<form oninput="result.value=parseFloat(calories.value) * parseFloat(count.value)">
+    <label for="calories">
+        <input type="range" name="calories" id="calories" value="50">
+   </label>
+   <label for="count">
+    <input type="number " name="count" min="1" max="3" value="1">
+   </label>
+   <output name="result" for="calories count">50</output>
+   <!--end of comment-->
+    
+</body>
+</html>
